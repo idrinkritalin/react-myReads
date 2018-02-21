@@ -17,10 +17,12 @@ class SearchBooks extends React.Component {
     if (this.query) {
       BooksAPI.search(this.query).then(response => {
           this.setState({
-            requestedBooks: response.map(result => {
+            requestedBooks:
+            response ? response.map(result => {
               let bookOwned = booksInShelf.find(b => b.id === result.id)
               return bookOwned || result
             })
+            : []
           })
       })
     } else {

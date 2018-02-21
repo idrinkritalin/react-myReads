@@ -1,4 +1,4 @@
-# 📚 MyReads - Stefano Veltri
+# 📚 MyReads
 
 This repo is my first assignment for Udacity's React Fundamentals course [React Nanodegree program](https://www.udacity.com/course/react-nanodegree--nd019).
 
